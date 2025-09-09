@@ -15,10 +15,35 @@ This repository presents the explanation of my submitted code for
 4. The normalized array is saved as a "X_normalized.npy" file.
 
 **Step-by-step:**
-Generate a random 5x5 array.
-1. Compute the mean and standard deviation.
-2. Normalize the array using the formula above.
-3. Print results (original array, mean, std, normalized array).
-4. Save the normalized array as **"X_normalized.npy"**.
+1. Generate a random 5x5 array.
+2. Compute the mean and standard deviation.
+3. Normalize the array.
+4. Print results (original array, mean, std, normalized array).
+5. Save the normalized array as **"X_normalized.npy"**.
+
+## Code Snippet:
+```
+import numpy as np
+
+# Create random 5x5 array and populate with numbers between 0 and 1
+X = np.random.rand(5, 5)
+
+# Calculate mean and standard deviation
+mean = X.mean()
+std = X.std()
+
+# Normalize array 
+X_normalized = (X - mean) / std
+
+# Print original array and normalized array
+print("Original Array:\n", X)
+print("\nMean of X:", mean_X)
+print("Standard Deviation of X:", std_X)
+print("\nNormalized Array:\n", X_normalized)
+
+# Save and print saved file name
+np.save("X_normalized.npy", X_normalized)
+print("\nNormalized array saved as 'X_normalized.npy'")
+```
 
 ## 2. Divisible By 3 Problem
