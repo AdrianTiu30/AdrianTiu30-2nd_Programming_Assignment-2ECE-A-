@@ -14,13 +14,6 @@ This repository presents the explanation of my submitted code for
 3. The original array, mean, standard deviation, and normalized array are printed.
 4. The normalized array is saved as a "X_normalized.npy" file.
 
-**Step-by-step:**
-1. Generate a random 5x5 array.
-2. Compute the mean and standard deviation.
-3. Normalize the array.
-4. Print results (original array, mean, std, normalized array).
-5. Save the normalized array as **"X_normalized.npy"**.
-
 ## Code Snippet:
 ```
 import numpy as np
@@ -77,14 +70,7 @@ Normalized array saved as 'X_normalized.npy'
 2. The array is reshaped into a 10x10 format.
 3. Elements divisible by 3 are extracted.
 4. The original array and filtered numbers are printed.
-5. The result is saved as a **.npy** file.
-
-**Step-by-step:**
-1. Generate squares of numbers from 1 to 100.
-2. Reshape into a 10x10 array.
-3. Extract numbers divisible by 3.
-4. Print the full array and the numbers divisible by 3.
-5. Save the result as **"div_by_3.npy"**.
+5. The result is saved as a **div_by_3.npy** file.
 
 ## Code Snippet:
 ```
